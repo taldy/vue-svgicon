@@ -1,6 +1,5 @@
 function getName(uri) {
-  return uri.split('/').pop().replace('.svg', '')
-
+  return uri.split(/[\/\\]/gi).pop().replace('.svg', '')
 }
 
 function loader(source) {
